@@ -43,8 +43,7 @@ Since `oussama-kirene-portfolio` is already taken, choose one of these:
 
 After creating, you'll see a URL like:
 ```
-https://github.com/ATTARAYOUB/your-chosen-name
-```
+https://github.com/ATTARAYOUB/portfolio-oussama
 
 **Copy this URL - you'll need it in Step 3!**
 
@@ -57,7 +56,7 @@ Open Command Prompt or PowerShell and run:
 ```bash
 cd "C:\Users\THE BOSS\Desktop\all-files"
 
-git remote add origin https://github.com/ATTARAYOUB/your-chosen-name.git
+git remote add origin https://github.com/ATTARAYOUB/portfolio-oussama.git
 
 git branch -M main
 
