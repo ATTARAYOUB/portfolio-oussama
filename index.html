@@ -525,6 +525,22 @@ footer p{font-size:.8rem;color:var(--text-muted);font-weight:300;letter-spacing:
   from{opacity:0;transform:translateY(30px)}
   to{opacity:1;transform:translateY(0)}
 }
+@keyframes slideInLeft{
+  from{opacity:0;transform:translateX(-40px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes slideInRight{
+  from{opacity:0;transform:translateX(40px)}
+  to{opacity:1;transform:translateX(0)}
+}
+@keyframes fadeInScale{
+  from{opacity:0;transform:scale(0.95)}
+  to{opacity:1;transform:scale(1)}
+}
+@keyframes glow{
+  0%,100%{box-shadow:0 0 10px rgba(212,168,83,0.3)}
+  50%{box-shadow:0 0 20px rgba(212,168,83,0.6)}
+}
 .reveal{opacity:0;transform:translateY(30px);transition:all .6s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
@@ -711,6 +727,53 @@ a:focus,button:focus,input:focus,textarea:focus,select:focus{
   .skills-grid{grid-template-columns:1fr}
   section{padding:60px 0}
   #backToTop{bottom:20px;right:20px;width:44px;height:44px;font-size:1rem}
+  nav .logo{font-size:1.2rem;letter-spacing:1px}
+  nav .nav-links a{font-size:.85rem}
+  .hero h1{font-size:clamp(2rem,5vw,3.5rem)}
+  .section-title{font-size:clamp(1.5rem,3vw,2.5rem)}
+  .contact-item{padding:8px;margin:-8px}
+  .skill-category,.exp-card,.edu-item{padding:20px}
+  .lang-card{padding:16px}
+}
+
+@media(max-width:480px){
+  .container{padding:0 16px}
+  nav .logo{font-size:1rem;letter-spacing:.5px}
+  nav .nav-links{gap:24px}
+  .hero{min-height:auto;padding-top:calc(var(--nav-h) + 20px)}
+  .hero h1{font-size:clamp(1.8rem,4vw,2.5rem)}
+  .hero-stats{flex-direction:column;gap:20px}
+  .hero-cta{flex-direction:column}
+  .btn{width:100%;text-align:center;padding:12px 20px;font-size:.85rem}
+  .photo-frame{width:200px;height:250px}
+  .section-title{font-size:clamp(1.2rem,2.5vw,2rem)}
+  .section-label{font-size:.7rem}
+  .timeline{padding-left:20px}
+  .timeline-dot{left:-30px}
+  .exp-card{padding:16px}
+  .skill-category{padding:16px}
+  .edu-item,.cert-item{padding:16px}
+  .lang-card{min-width:100px;padding:12px}
+  .contact-item{gap:12px}
+  .contact-icon{width:36px;height:36px;font-size:.9rem}
+  .contact-cta{padding:20px}
+  .contact-cta h3{font-size:1.3rem}
+  footer p{font-size:.7rem}
+  #backToTop{width:40px;height:40px;font-size:.9rem;bottom:16px;right:16px}
+}
+
+@media(max-width:360px){
+  .container{padding:0 12px}
+  .hero h1{font-size:clamp(1.5rem,3vw,2rem)}
+  .hero-stats{gap:16px}
+  .hero-stat .num{font-size:1.8rem}
+  .hero-stat .label{font-size:.65rem}
+  .btn{font-size:.8rem;padding:10px 16px}
+  .photo-frame{width:160px;height:200px}
+  .section-title{font-size:clamp(1rem,2vw,1.5rem)}
+  .exp-card,.skill-category,.edu-item{padding:12px}
+  .contact-cta h3{font-size:1.1rem}
+  .contact-cta p{font-size:.85rem}
 }
 </style>
 </head>
