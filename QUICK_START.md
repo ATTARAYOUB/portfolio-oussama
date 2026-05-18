@@ -39,7 +39,8 @@ git push -u origin main
 2. Click **Add New** → **Project**
 3. Click **Import Git Repository**
 4. Paste your GitHub URL
-5. Click **Deploy**
+5. **Framework:** Leave as default (auto-detected)
+6. Click **Deploy**
 
 ## ✅ Done!
 

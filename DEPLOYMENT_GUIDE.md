@@ -56,9 +56,9 @@ You should see all your files there!
 1. Go to https://vercel.com/dashboard
 2. Click **Add New** → **Project**
 3. Click **Import Git Repository**
-4. Paste: `https://github.com/ATTARAYOUB/oussama-kirene-portfolio`
+4. Paste: `https://github.com/YOUR_USERNAME/your-repo-name`
 5. Click **Import**
-6. **Framework Preset:** Select "Other" (it's static HTML)
+6. **Framework Preset:** Select "Other" or leave as default
 7. **Build Command:** Leave empty
 8. **Output Directory:** Leave empty
 9. Click **Deploy**
